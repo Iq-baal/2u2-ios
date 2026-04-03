@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2U2.ai - The Meme Arsenal for the Web3 Era</title>
+    <meta name="description" content="Create, remix, and monetize memes with AI-powered tools. Join the next generation of Web3 content creation with 2U2.ai.">
+    <meta name="keywords" content="meme, AI, Web3, NFT, meme generator, create memes, crypto, token">
+    <meta name="author" content="2U2.ai">
+    <link rel="canonical" href="https://2u2.ai/">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#060d0f">
+
+    <!-- og -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://2u2.ai/">
+    <meta property="og:title" content="2U2.ai - The Meme Arsenal for the Web3 Era">
+    <meta property="og:description" content="Create, remix, and monetize memes with AI-powered tools. Web3 powered meme creation platform.">
+    <meta property="og:image" content="https://2u2.ai/og-image.png">
+    <meta property="og:site_name" content="2U2.ai">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2U2.ai - The Meme Arsenal for the Web3 Era">
+    <meta name="twitter:description" content="Create, remix, and monetize memes with AI-powered tools. Web3 powered meme creation platform.">
+    <meta name="twitter:image" content="https://2u2.ai/og-image.png">
+
+    <!-- security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+
+    <!-- structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "2U2.ai",
+        "url": "https://2u2.ai",
+        "description": "AI-powered meme creation and monetization platform for Web3.",
+        "applicationCategory": "CreativeApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "5",
+            "highPrice": "100",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- favicon - inline svg so no extra request -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="bg-gradient"></div>
+    <div class="bg-mesh"></div>
+    <div class="bg-blur-orb orb-1"></div>
+    <div class="bg-blur-orb orb-2"></div>
+    <div class="bg-blur-orb orb-3"></div>
+    <div class="bg-blur-orb orb-4"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-glass">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">2U2</span>
+                <span class="logo-text">.ai</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#economy" class="nav-link">Economy</a>
+                <a href="#features" class="nav-link">Product</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <a href="/app" class="btn-glass btn-primary">
+                <span>Launch App</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content glass-card">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#economy" class="mobile-nav-link">Economy</a>
+            <a href="#features" class="mobile-nav-link">Product</a>
+            <a href="#roadmap" class="mobile-nav-link">Roadmap</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#" class="btn-glass btn-primary mobile-cta">Launch App</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge glass-pill">
+                <span class="pulse-dot"></span>
+                <span>The Meme Arsenal for the Web3 Era</span>
+            </div>
+            <h1 class="hero-title">
+                Text-to-Viral<br>
+                <span class="gradient-text">in Seconds.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Stop using Photoshop. Start shipping culture. The first AI-powered 
+                infrastructure layer designed for instant content creation, community 
+                remixing, and narrative dominance.
+            </p>
+            <div class="hero-ctas">
+                <a href="/app" class="btn-glass btn-primary btn-lg">
+                    <span>Launch App</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="https://t.me/ai2u2meme/11641" class="btn-glass btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">
+                    <span>Partner Inquiry</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1 glass-card">
+                <div class="card-icon">&#129302;</div>
+                <span>AI Engine</span>
+            </div>
+            <div class="floating-card card-2 glass-card">
+                <div class="card-icon">&#127912;</div>
+                <span>NFT Ready</span>
+            </div>
+            <div class="floating-card card-3 glass-card">
+                <div class="card-icon">&#128640;</div>
+                <span>Web3</span>
+            </div>
+        </div>
+
+        <!-- scrolling pills -->
+        <div class="marquee-strip">
+            <div class="marquee-track" id="marqueeTrack">
+                <div class="marquee-pill glass-pill">100% COMMUNITY DRIVEN</div>
+                <div class="marquee-pill glass-pill">POWERING THE NEXT META</div>
+                <div class="marquee-pill glass-pill">FORGED FROM SACRIFICED AI SOULS</div>
+                <div class="marquee-pill glass-pill">100% COMMUNITY DRIVEN</div>
+                <div class="marquee-pill glass-pill">POWERING THE NEXT META</div>
+                <div class="marquee-pill glass-pill">FORGED FROM SACRIFICED AI SOULS</div>
+                <div class="marquee-pill glass-pill">100% COMMUNITY DRIVEN</div>
+                <div class="marquee-pill glass-pill">POWERING THE NEXT META</div>
+                <div class="marquee-pill glass-pill">FORGED FROM SACRIFICED AI SOULS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- wave -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 60C240 120 480 0 720 60C960 120 1200 0 1440 60V120H0V60Z" fill="rgba(0,245,126,0.03)"/>
+            <path d="M0 80C200 40 400 100 720 70C1040 40 1240 100 1440 80V120H0V80Z" fill="rgba(0,245,126,0.02)"/>
+        </svg>
+    </div>
+
+    <!-- Mission statement -->
+    <section class="mission">
+        <div class="mission-content">
+            <p class="mission-text">
+                In crypto, attention is the only asset that matters. But creating high-quality memes is slow, hard, and centralized.
+                <br><br>
+                2U2.ai democratizes "Proof of Creativity." We are building the Meme Layer&mdash;the underlying infrastructure that powers
+                emotional liquidity across chains. From individual creators to top-tier protocols, 2U2.ai provides the weapons to
+                win the narrative war.
+            </p>
+        </div>
+    </section>
+
+    <!-- wave -->
+    <div class="wave-divider wave-flip">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 40C360 100 720 0 1080 60C1260 90 1380 30 1440 50V100H0V40Z" fill="rgba(0,245,126,0.025)"/>
+        </svg>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <span class="section-badge glass-pill">Product</span>
+            <h2 class="section-title">Powerful Creation Tools</h2>
+            <p class="section-subtitle">Everything you need to dominate the meme economy</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card glass-card">
+                <div class="feature-num">01</div>
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">&#129302;</div>
+                </div>
+                <h3 class="feature-title">The AI Engine</h3>
+                <p class="feature-desc">Zero Skills. Maximum Chaos.</p>
+                <ul class="feature-list">
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Text-to-Meme:</strong> Type "Pepe crying about gas fees" and get a unique 3D render in 10 seconds</span>
+                    </li>
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Face Swap Protocol:</strong> Upload your PFP. Become the meme. Instantly insert your identity into trending formats</span>
+                    </li>
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Smart Captioning:</strong> AI suggests the most degen, viral captions based on current market sentiment</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="feature-card glass-card featured">
+                <div class="featured-badge glass-pill-sm">Popular</div>
+                <div class="feature-num">02</div>
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">&#128257;</div>
+                </div>
+                <h3 class="feature-title">The Remix Network</h3>
+                <p class="feature-desc">Don't Just Like. Remix.</p>
+                <ul class="feature-list">
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Branching History:</strong> See how a meme evolves from the original creator to the 100th variant</span>
+                    </li>
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Tribute System:</strong> When you remix, you pay respect (and potential rewards) to the original creator</span>
+                    </li>
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Squad Mode:</strong> Generate matching memes for your entire DAO or TG group instantly</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="feature-card glass-card">
+                <div class="feature-num">03</div>
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">&#128218;</div>
+                </div>
+                <h3 class="feature-title">The Asset Library</h3>
+                <p class="feature-desc">Your IP, Weaponized.</p>
+                <ul class="feature-list">
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Native NFT Support:</strong> Connect your wallet. Use your Bored Ape, Pudgy Penguin, or Milady directly inside the engine</span>
+                    </li>
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Official Partner Packs:</strong> Exclusive sticker packs and motion templates from top-tier partner protocols</span>
+                    </li>
+                    <li>
+                        <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span><strong>Community Templates:</strong> User-generated templates and assets marketplace</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="maas-section">
+            <div class="maas-content glass-card-lg">
+                <div class="maas-badge glass-pill">MaaS - Meme as a Service</div>
+                <h3 class="maas-title">Empower Your Community to Shill For You</h3>
+                <div class="maas-features">
+                    <div class="maas-item">
+                        <div class="maas-icon">&#129302;</div>
+                        <div class="maas-text">
+                            <h4>1. Custom Meme Bots</h4>
+                            <p>Deploy a branded 2U2.ai Bot into your Discord/Telegram. Let users generate your project's memes with a single command (/meme [prompt]).</p>
+                        </div>
+                    </div>
+                    <div class="maas-item">
+                        <div class="maas-icon">&#127919;</div>
+                        <div class="maas-text">
+                            <h4>2. White-Label Campaigns</h4>
+                            <p>Host "Meme Contests" powered by 2U2.ai's leaderboard system. Verifiable creativity, automated rewards.</p>
+                        </div>
+                    </div>
+                    <div class="maas-item">
+                        <div class="maas-icon">&#128279;</div>
+                        <div class="maas-text">
+                            <h4>3. On-Chain Identity</h4>
+                            <p>Bind your project's NFT collection to our engine. Give your holders the tools to spread your IP across X (Twitter).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="maas-cta">
+                    <a href="https://t.me/ai2u2meme/11641" class="btn-glass btn-primary" target="_blank" rel="noopener noreferrer">
+                        <span>Apply for Partnership</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 50C180 10 360 90 540 50C720 10 900 90 1080 50C1260 10 1380 70 1440 50V100H0V50Z" fill="rgba(0,245,126,0.02)"/>
+        </svg>
+    </div>
+
+    <!-- Economy Section -->
+    <section id="economy" class="economy">
+        <div class="section-header">
+            <span class="section-badge glass-pill">$2U2 Token</span>
+            <h2 class="section-title">The Viral Economy</h2>
+        </div>
+
+        <div class="economy-statement glass-card-lg">
+            <p class="economy-quote">Meme is the Language.<br><span class="gradient-text">2U2.ai is the Dictionary.</span></p>
+        </div>
+
+        <div class="economy-grid">
+            <div class="economy-card glass-card">
+                <div class="economy-icon">&#127912;</div>
+                <h3>Create-to-Earn (Reputation)</h3>
+                <p>Climb the leaderboard by creating high-engagement content. Top creators gain access to Alpha tools.</p>
+            </div>
+            <div class="economy-card glass-card">
+                <div class="economy-icon">&#128228;</div>
+                <h3>Share-to-Earn (Visibility)</h3>
+                <p>Don't just make it. Spread it. Our system tracks on-chain and off-chain virality.</p>
+            </div>
+            <div class="economy-card glass-card">
+                <div class="economy-icon">&#128293;</div>
+                <h3>Burn-to-Access (Deflation)</h3>
+                <p>High-tier models and watermark removal require community contribution (Credits). Keeps the flywheel spinning.</p>
+            </div>
+        </div>
+
+        <div class="token-info glass-card-lg">
+            <div class="token-visual">
+                <div class="token-circle">
+                    <span class="token-symbol">$2U2</span>
+                </div>
+            </div>
+            <div class="token-details">
+                <span class="coming-soon-badge glass-pill-sm">Coming Soon</span>
+                <h3>$2U2 Token</h3>
+                <p>The native utility token powering the 2U2 ecosystem. Use it for premium features, governance, and rewards.</p>
+                <div class="token-perks">
+                    <span class="perk-item glass-pill-sm">20% Discount</span>
+                    <span class="perk-item glass-pill-sm">100% Burned</span>
+                    <span class="perk-item glass-pill-sm">Staking Rewards</span>
+                    <span class="perk-item glass-pill-sm">Governance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <span class="section-badge glass-pill">Pricing</span>
+            <h2 class="section-title">Select Your Loadout</h2>
+            <p class="section-subtitle">Top Tip: Credits never expire. Stack them up.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card glass-card">
+                <div class="pricing-emoji">&#128056;</div>
+                <h3 class="pricing-name">Pepe's Pocket</h3>
+                <p class="pricing-tagline">For the casual reposter.</p>
+                <div class="pricing-price">
+                    <span class="currency">$</span>
+                    <span class="amount">5</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>500 Credits</span>
+                    </li>
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>~500 Standard Memes or 10 Short Videos</span>
+                    </li>
+                    <li class="disabled">
+                        <span class="x"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+                        <span>No Priority Queue</span>
+                    </li>
+                    <li class="disabled">
+                        <span class="x"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+                        <span>No Perks</span>
+                    </li>
+                </ul>
+                <a href="/app" class="btn-glass btn-secondary btn-full">Get Started</a>
+            </div>
+
+            <div class="pricing-card glass-card featured-pricing">
+                <div class="best-value glass-pill-sm">Best Value</div>
+                <div class="pricing-emoji">&#129464;</div>
+                <h3 class="pricing-name">Degen's Stash</h3>
+                <p class="pricing-tagline">For the relentless shiller &amp; trend surfer.</p>
+                <div class="pricing-price">
+                    <span class="currency">$</span>
+                    <span class="amount">20</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>2,500 Credits (Buy 2k + 500 Bonus)</span>
+                    </li>
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>~2,500 Standard Memes or 50 Short Videos</span>
+                    </li>
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>3x Priority Queue</span>
+                    </li>
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>20% Cheaper Per Credit</span>
+                    </li>
+                </ul>
+                <a href="/app" class="btn-glass btn-primary btn-full">Get Started</a>
+            </div>
+
+            <div class="pricing-card glass-card">
+                <div class="pricing-emoji">&#129299;</div>
+                <h3 class="pricing-name">Wojak's Armory</h3>
+                <p class="pricing-tagline">For project leads, studios, and narrative controllers.</p>
+                <div class="pricing-price">
+                    <span class="currency">$</span>
+                    <span class="amount">100</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>15,000 Credits (Buy 10k + 5k Bonus)</span>
+                    </li>
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>Mass Production Ready</span>
+                    </li>
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>30-Day Pro Pass (No Watermarks)</span>
+                    </li>
+                    <li>
+                        <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span>API Key Access + Permanent Priority Queue</span>
+                    </li>
+                </ul>
+                <a href="/app" class="btn-glass btn-secondary btn-full">Get Started</a>
+            </div>
+        </div>
+
+        <div class="payment-methods glass-card-mini">
+            <div class="payment-option">
+                <span class="payment-badge glass-pill-sm">USDT / Card</span>
+                <span class="payment-desc">Instant Deposit</span>
+            </div>
+            <div class="payment-divider"></div>
+            <div class="payment-option highlight-option">
+                <span class="payment-badge glass-pill-sm highlight">Pay with $2U2</span>
+                <span class="payment-desc">20% OFF &middot; 100% Burned</span>
+                <span class="payment-recommended glass-pill-sm">RECOMMENDED</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap">
+        <div class="section-header">
+            <span class="section-badge glass-pill">Roadmap</span>
+            <h2 class="section-title">The Journey Ahead</h2>
+            <p class="section-subtitle">Our vision for the future of meme creation</p>
+        </div>
+
+        <div class="roadmap-timeline">
+            <div class="timeline-line"></div>
+            
+            <div class="roadmap-item glass-card">
+                <div class="roadmap-phase glass-pill-sm">Phase 1</div>
+                <h3 class="roadmap-title">Ignition (Current)</h3>
+                <ul class="roadmap-list">
+                    <li>Launch MVP Web App</li>
+                    <li>Core AI Engine Deployment (Text-to-Image)</li>
+                    <li>Genesis Creator Onboarding</li>
+                    <li>Early Bird "O.G." Badges</li>
+                </ul>
+                <div class="roadmap-status active">
+                    <span class="status-dot"></span>
+                    <span>In Progress</span>
+                </div>
+            </div>
+
+            <div class="roadmap-item glass-card">
+                <div class="roadmap-phase glass-pill-sm">Phase 2</div>
+                <h3 class="roadmap-title">Expansion (The Flywheel)</h3>
+                <ul class="roadmap-list">
+                    <li>MaaS Integration: Discord/TG Bot Beta for Partners</li>
+                    <li>Video Generation: Short-form meme video support</li>
+                    <li>Mobile App Beta: iOS/Android Testing</li>
+                    <li>Referral System V2: Viral invite mechanics</li>
+                </ul>
+                <div class="roadmap-status">
+                    <span class="status-dot"></span>
+                    <span>Upcoming</span>
+                </div>
+            </div>
+
+            <div class="roadmap-item glass-card">
+                <div class="roadmap-phase glass-pill-sm">Phase 3</div>
+                <h3 class="roadmap-title">The Meme Layer (TGE &amp; Beyond)</h3>
+                <ul class="roadmap-list">
+                    <li>$2U2 TGE (Token Generation Event)</li>
+                    <li>Staking for Compute: Stake to gain free generation limits</li>
+                    <li>Decentralized Asset Store: User-generated sticker packs marketplace</li>
+                    <li>Cross-Chain Narrative Bridge</li>
+                </ul>
+                <div class="roadmap-status">
+                    <span class="status-dot"></span>
+                    <span>Future</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-header">
+            <span class="section-badge glass-pill">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know</p>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <span>Is 2U2.ai free to use?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, the basic engine is free for everyone. We believe memeing is a fundamental right. However, Power Users (removal of watermarks, high-res downloads, video generation) will need Credits, which can be earned via community contributions or acquired.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <span>Can I use my own NFT?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. 2U2.ai is built for Web3. You can upload your own assets or connect your wallet (coming soon) to use your PFPs as the main character in our meme templates.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <span>How do I partner with 2U2.ai?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We are actively looking for ecosystem partners (L1/L2 chains, NFT collections, DeFi protocols). If you want a custom meme engine for your community, click the "Partner Inquiry" button above.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">2U2</span>
+                        <span class="logo-text">.ai</span>
+                    </a>
+                    <p>Building the Narrative Layer.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Ecosystem</h4>
+                        <a href="#">$2U2 (Coming Soon)</a>
+                        <a href="#">Governance</a>
+                        <a href="#">Treasury</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <a href="https://drive.google.com/file/d/1Lc3rufeDb63bTlB3eZGH83UoxPEt-Fzm/view" target="_blank" rel="noopener noreferrer">Docs</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">Report Bug</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Socials</h4>
+                        <a href="https://x.com/2u2ai" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+                        <a href="https://t.me/ai2u2meme" target="_blank" rel="noopener noreferrer">Telegram</a>
+                        <a href="https://medium.com/@2u2ai" target="_blank" rel="noopener noreferrer">Medium</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom glass-card-mini">
+                <p>&copy; 2026 2U2 AI Foundation. Building the Narrative Layer.</p>
+                <div class="footer-socials">
+                    <a href="https://x.com/2u2ai" target="_blank" rel="noopener noreferrer" class="social-link glass-pill-sm">X</a>
+                    <a href="https://t.me/ai2u2meme" target="_blank" rel="noopener noreferrer" class="social-link glass-pill-sm">TG</a>
+                    <a href="https://medium.com/@2u2ai" target="_blank" rel="noopener noreferrer" class="social-link glass-pill-sm">M</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader - shows while page paints -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <span class="loader-logo">2U2</span>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
